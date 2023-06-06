@@ -5,21 +5,22 @@
     <title>js</title>
 </head>
 <body>
-<p id="out"></p>
-<!--<script>-->
-<!--    // document.write("hello sương thanh");-->
-<!--    // console.log("hello world")-->
-<!--    // document.getElementById("out").innerText = "sương thanh"\-->
-<!--    // var a = +prompt("nhập số bạn muốn 2/3");-->
-<!--    // var b = 5;-->
-<!--    // if(a ==2){-->
-<!--    //         document.write(b);-->
-<!--    // }else {-->
-<!--    //     b= 3;-->
-<!--    //     document.write(b);-->
-<!--    // }-->
 
-<!--</script>-->
+    <input type="text" id="input1" placeholder="nhap so thu nhat">
+    <button onclick="tinh()"> + </button>
+    <input type="text" id="input2" placeholder="nhap so thu hai">
+    <p id="out"></p>
 
+<script>
+    function tinh() {
+        var num1 = +document.getElementById("input1").value;
+        var num2 = +document.getElementById("input2").value;
+        var result = num1 + num2
+        document.getElementById("out").innerText = "tong cua hai so = " + result;
+        // document.write("tong cua hai so = " + result)
+    }
+
+
+</script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h4>Caculator</h4>
+<table>
+    <tr>
+        <input type="text" id="soThuNhat" >
+        <input type="text" id="soThuHai" >
+    </tr>
+</table>
+<table>
+
+    <tr>
+        <button onclick="add()">Addition(+)</button>
+        <button onclick="sub()">Subtraction(-)</button>
+        <button onclick="mul()">Multiplication(X)</button>
+        <button onclick="di()">Division(/)</button>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function add() {
+        var number1 =+document.getElementById("soThuNhat").value;
+        var number2 =+document.getElementById("soThuHai").value;
+        var result = number1 + number2
+        document.getElementById("result").innerText = "=" + result;
+    }
+    function sub() {
+        var number1 =+document.getElementById("soThuNhat").value;
+        var number2 =+document.getElementById("soThuHai").value;
+        var result = number1-number2
+        document.getElementById("result").innerText = "=" + result;
+
+    }
+    function mul() {
+        var number1 =+document.getElementById("soThuNhat").value;
+        var number2 =+document.getElementById("soThuHai").value;
+        var result = number1 * number2
+        document.getElementById("result").innerText = "=" + result;
+
+    }
+    function di() {
+        var number1 =+document.getElementById("soThuNhat").value;
+        var number2 =+document.getElementById("soThuHai").value;
+        var result = number1/number2
+        document.getElementById("result").innerText = "=" + result;
+
+    }
+</script>
+</body>
+</html>
